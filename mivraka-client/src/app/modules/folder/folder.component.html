@@ -1,32 +1,9 @@
 <mat-drawer-container>
         <mat-drawer mode="side" opened>
-                <mat-selection-list #telegrams>
-                        <mat-list-option>
-                                מברק 1
-                        </mat-list-option> 
-                        <mat-list-option>
-                                מברק 2
-                        </mat-list-option> 
-                        <mat-list-option>
-                                מברק 3
-                        </mat-list-option> 
-                        <mat-list-option>
-                                מברק 4
-                        </mat-list-option> 
-                        <mat-list-option>
-                                מברק 5
-                        </mat-list-option> 
-                        
-                </mat-selection-list>                      
+                <app-folder-telegrams></app-folder-telegrams>
         </mat-drawer>
-    
+
         <mat-drawer-content>
-            AAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAAAAAAAAA
-        </mat-drawer-content>  
-    
+                <app-folder-telegram-content></app-folder-telegram-content>
+        </mat-drawer-content>
 </mat-drawer-container>
