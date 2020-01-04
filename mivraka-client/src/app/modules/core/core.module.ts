@@ -1,11 +1,10 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ThemeService } from './services/theme.service';
 
 
 
 @NgModule({
-  providers: [ThemeService]
+  providers: []
 })
 
 export class CoreModule {

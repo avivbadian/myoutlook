@@ -12,4 +12,7 @@ export class FolderTelegramsComponent implements OnInit {
   ngOnInit() {
   }
 
+  RowSelected(i: string) {
+    console.log('Row number ' + i + ' was selected');
+  }
 }
