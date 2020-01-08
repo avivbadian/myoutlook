@@ -1,6 +1,6 @@
 <mat-drawer-container>
     <mat-drawer mode="side" opened>
-            <app-folder-telegrams></app-folder-telegrams>
+            <app-folder-telegrams [telegrams]="getTelegrams()"></app-folder-telegrams>
     </mat-drawer>
 
     <mat-drawer-content>
