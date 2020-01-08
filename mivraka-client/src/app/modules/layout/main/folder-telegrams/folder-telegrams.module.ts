@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FolderTelegramsComponent } from './folder-telegrams.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { jqxGridModule } from 'jqwidgets-ng/jqxgrid';
+
 
 
 
@@ -13,7 +15,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     MatListModule,
     SharedModule,
-    TelegramRowModule
+    TelegramRowModule,
+    jqxGridModule
   ],
   exports: [
     FolderTelegramsComponent

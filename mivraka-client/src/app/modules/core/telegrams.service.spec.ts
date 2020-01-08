@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { FoldersService } from './folders.service';
+import { TelegramsService } from './telegrams.service';
 
-describe('FoldersService', () => {
+describe('TelegramsService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: FoldersService = TestBed.get(FoldersService);
+    const service: TelegramsService = TestBed.get(TelegramsService);
     expect(service).toBeTruthy();
   });
 });

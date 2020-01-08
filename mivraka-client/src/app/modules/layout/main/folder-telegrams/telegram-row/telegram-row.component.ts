@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Telegram } from '../../../../models/telegram';
 
 @Component({
   selector: 'app-telegram-row',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TelegramRowComponent implements OnInit {
 
+  @Input() telegram: Telegram
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

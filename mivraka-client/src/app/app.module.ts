@@ -1,6 +1,5 @@
 import { LayoutModule } from './modules/layout/layout.module';
 import { CoreModule } from './modules/core/core.module';
-import { FoldersService } from './modules/folders.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

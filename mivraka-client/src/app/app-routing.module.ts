@@ -1,11 +1,10 @@
-import { NewTelegramComponent } from './modules/new-telegram/new-telegram.component';
-import { FolderComponent } from './modules/folder/folder.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FolderTelegramContentComponent } from './modules/layout/main/folder-telegram-content/folder-telegram-content.component';
+import { NewTelegramComponent } from './modules/layout/main/new-telegram/new-telegram.component';
 
 const routes: Routes = [
-  {path: '', component: FolderComponent},
-   {path: 'folders/:folderId', component: FolderComponent },
+  {path: '', component: FolderTelegramContentComponent},
    {path: 'new', component: NewTelegramComponent}
 ];
 

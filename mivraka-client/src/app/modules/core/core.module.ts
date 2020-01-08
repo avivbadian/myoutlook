@@ -1,10 +1,13 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TelegramsService } from './telegrams.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
 @NgModule({
-  providers: []
+  imports: [HttpClientModule],
+  providers: [TelegramsService]
 })
 
 export class CoreModule {
