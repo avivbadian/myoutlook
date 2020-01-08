@@ -1,30 +1,30 @@
 [
     {
-        "subject": "נכנס 1",
+        "subject": "Incomign 1",
         "body": "שדגשדגשדגדשגשדגשגש",
         "id": 1,
         "ner": 1
     },
     {
-        "subject": "נכנס 1",
+        "subject": "Incoming 2",
         "body": "שדגשדגשדגדשגשדגשגש",
         "id": 1,
         "ner": 1
     },
     {
-        "subject": "נכנס 1",
+        "subject": "Incoming 3",
         "body": "שדגשדגשדגדשגשדגשגש",
         "id": 1,
         "ner": 1
     },
     {
-        "subject": "נכנס 4",
+        "subject": "Incoming 4",
         "body": "שדגשדגשדגדשגשדגשגש",
         "id": 4,
         "ner": 4
     },
     {
-        "subject": "נכנס 5",
+        "subject": "Incoming 5",
         "body": "שדגשדגשדגדשגשדגשגש",
         "id": 5,
         "ner": 5

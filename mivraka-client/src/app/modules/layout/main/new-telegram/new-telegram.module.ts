@@ -1,7 +1,6 @@
-import { SharedModule } from './../../shared/shared.module';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { NewTelegramComponent } from './new-telegram.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [NewTelegramComponent],

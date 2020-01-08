@@ -8,7 +8,7 @@ import { Telegram } from '../../../../models/telegram';
 })
 export class TelegramRowComponent implements OnInit {
 
-  @Input() telegram: Telegram
+  @Input() telegram: Telegram;
 
   constructor() { }
 

@@ -1,13 +1,12 @@
-import { NewTelegramModule } from './../new-telegram/new-telegram.module';
+import { MainModule } from './main/main.module';
 import { HeaderModule } from './header/header.module';
 import { AppRoutingModule } from './../../app-routing.module';
 import { MatSidenavModule } from '@angular/material';
 import { SharedModule } from './../../shared/shared.module';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { SidebarModule } from './sidebar/sidebar.module';
-import { FolderModule } from '../folder/folder.module';
+import { NewTelegramModule } from './main/new-telegram/new-telegram.module';
 
 
 
@@ -19,8 +18,8 @@ import { FolderModule } from '../folder/folder.module';
     AppRoutingModule,
     HeaderModule,
     SidebarModule,
-    FolderModule,
-    NewTelegramModule
+    NewTelegramModule,
+    MainModule
   ],
   exports: [
     LayoutComponent

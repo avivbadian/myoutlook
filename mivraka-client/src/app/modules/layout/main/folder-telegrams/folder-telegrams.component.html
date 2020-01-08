@@ -1,6 +1,19 @@
 <jqxGrid #grid [selectionmode]='"multiplerowsadvanced"' [showheader]='false'
- [autoheight]='true' [sortable]='true'>  
-    <tr *ngFor="let telegram of telegrams">  
-      <app-telegram-row [telegram]="telegram"></app-telegram-row>
+ [autoheight]='true' [sortable]='true' [rtl]='true' [source]="dataAdapter">  
+ <tr>
+   <th>
+     telegrams
+   </th>
+ </tr>
+    <tr *ngFor="let telegram of telegrams$ | async">  
+      <td>
+          <app-telegram-row [telegram]=telegram></app-telegram-row>
+      </td>
     </tr>  
   </jqxGrid>  
+
+  <table>
+      <tr *ngFor="let telegram of telegrams$ | async">  
+          <app-telegram-row [telegram]="telegram"></app-telegram-row>
+        </tr>  
+  </table>

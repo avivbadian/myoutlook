@@ -1,3 +1,4 @@
-.mat-list-item:hover {
-    background-color: cadetblue
+
+::ng-deep .jqx-grid-cell-left-align {
+    text-align: right;
 }

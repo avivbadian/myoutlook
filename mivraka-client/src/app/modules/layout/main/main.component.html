@@ -1,9 +1,9 @@
 <mat-drawer-container>
     <mat-drawer mode="side" opened>
-            <app-folder-telegrams [telegrams]="getTelegrams()"></app-folder-telegrams>
+            <app-folder-telegrams></app-folder-telegrams>
     </mat-drawer>
 
     <mat-drawer-content>
-            <app-folder-telegram-content></app-folder-telegram-content>
+            <router-outlet></router-outlet>
     </mat-drawer-content>
 </mat-drawer-container>
