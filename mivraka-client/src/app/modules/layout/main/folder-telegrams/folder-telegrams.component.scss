@@ -5,6 +5,14 @@
 }
 
 .selected {
-    background-color: red
+    font-weight: bold;
+}
+
+.marked {
+    background-color: lightcoral !important;
+}
+
+.last-marked {
+    border-style: dashed;
 }
 

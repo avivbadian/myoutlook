@@ -20,9 +20,14 @@
         </mat-list-option>  
   </mat-selection-list > -->
 
-<mat-list>
-  <mat-list-item *ngFor="let telegram of telegrams$ | async as telegrams; let i=index" [ngClass]="{selected: checkSelected(telegram.id)}" 
-  (click)="telegramSelected(telegram.id, i, telegrams.length)">
+<mat-list (body:keydown.control.a)="markAll()"
+          (body:keydown.arrowup)="handleNavigation(markIndex - 1)"
+          (body:keydown.arrowdown)="handleNavigation(markIndex + 1)"
+          (body:keydown.shift.arrowup)="handleShiftUpNavigation()"
+          (body:keydown.shift.arrowdown)="handleShiftDownNavigation()">
+  <mat-list-item  *ngFor="let telegram of telegrams; let i=index" 
+      [ngClass]="{'selected': telegram.isSelected, 'marked': telegram.isMarked, 'last-marked': index==markIndex}" 
+  (click)="telegramSelected(i, $event)" >
       <app-telegram-row [telegram]="telegram"></app-telegram-row>
       <mat-divider></mat-divider>
   </mat-list-item>

@@ -5,6 +5,8 @@ export class Telegram {
     ner: number;
     body: string;
     subject: string;
+    isSelected: boolean;
+    isMarked: boolean;
 }
 
 export class TelegramDestination {
