@@ -1,4 +1,10 @@
+@import "../../../../../variables";
 
-::ng-deep .jqx-grid-cell-left-align {
-    text-align: right;
+.mat-list-item:hover {
+    background-color: $accent;
 }
+
+.selected {
+    background-color: red
+}
+

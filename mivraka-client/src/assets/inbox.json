@@ -1,6 +1,6 @@
 [
     {
-        "subject": "Incomign 1",
+        "subject": "Incomign1",
         "body": "שדגשדגשדגדשגשדגשגש",
         "id": 1,
         "ner": 1
@@ -8,13 +8,13 @@
     {
         "subject": "Incoming 2",
         "body": "שדגשדגשדגדשגשדגשגש",
-        "id": 1,
+        "id": 2,
         "ner": 1
     },
     {
         "subject": "Incoming 3",
         "body": "שדגשדגשדגדשגשדגשגש",
-        "id": 1,
+        "id": 3,
         "ner": 1
     },
     {

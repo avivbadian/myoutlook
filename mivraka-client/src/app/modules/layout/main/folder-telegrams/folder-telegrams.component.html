@@ -1,4 +1,4 @@
-<jqxGrid #grid [selectionmode]='"multiplerowsadvanced"' [showheader]='false'
+<!-- <jqxGrid #grid [selectionmode]='"multiplerowsadvanced"' [showheader]='false'
  [autoheight]='true' [sortable]='true' [rtl]='true' [source]="dataAdapter">  
  <tr>
    <th>
@@ -8,12 +8,22 @@
     <tr *ngFor="let telegram of telegrams$ | async">  
       <td>
           <app-telegram-row [telegram]=telegram></app-telegram-row>
+          <br>
+          what
       </td>
     </tr>  
-  </jqxGrid>  
+  </jqxGrid>   -->
 
-  <table>
-      <tr *ngFor="let telegram of telegrams$ | async">  
+<!-- <mat-selection-list >
+      <mat-list-option *ngFor="let telegram of telegrams$ | async">  
           <app-telegram-row [telegram]="telegram"></app-telegram-row>
-        </tr>  
-  </table>
+        </mat-list-option>  
+  </mat-selection-list > -->
+
+<mat-list>
+  <mat-list-item *ngFor="let telegram of telegrams$ | async as telegrams; let i=index" [ngClass]="{selected: checkSelected(telegram.id)}" 
+  (click)="telegramSelected(telegram.id, i, telegrams.length)">
+      <app-telegram-row [telegram]="telegram"></app-telegram-row>
+      <mat-divider></mat-divider>
+  </mat-list-item>
+    </mat-list>
