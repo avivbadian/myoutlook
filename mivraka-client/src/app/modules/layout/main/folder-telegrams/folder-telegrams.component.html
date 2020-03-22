@@ -25,9 +25,8 @@
           (body:keydown.arrowdown)="handleNavigation(markIndex + 1)"
           (body:keydown.shift.arrowup)="handleShiftUpNavigation()"
           (body:keydown.shift.arrowdown)="handleShiftDownNavigation()">
-  <mat-list-item  *ngFor="let telegram of telegrams; let i=index" 
-      [ngClass]="{'selected': telegram.isSelected, 'marked': telegram.isMarked}" 
-      <!-- [ngClass]="{'selected': telegram.isSelected, 'marked': telegram.isMarked, 'last-marked': index==markIndex}"  -->
+  <mat-list-item  *ngFor="let telegram of telegrams; index as i" 
+      [ngClass]="{'selected': telegram.isSelected, 'marked': telegram.isMarked, 'last-marked': i==markIndex}"
   (click)="telegramSelected(i, $event)" >
       <app-telegram-row [telegram]="telegram"></app-telegram-row>
       <mat-divider></mat-divider>
