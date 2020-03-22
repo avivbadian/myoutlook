@@ -1,5 +1,5 @@
 import { TelegramRowModule } from './telegram-row/telegram-row.module';
-import { MatListModule } from '@angular/material';
+import { MatListModule } from '@angular/material/list';
 import { NgModule } from '@angular/core';
 import { FolderTelegramsComponent } from './folder-telegrams.component';
 import { SharedModule } from 'src/app/shared/shared.module';

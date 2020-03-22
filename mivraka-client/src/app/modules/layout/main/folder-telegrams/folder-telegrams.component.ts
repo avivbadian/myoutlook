@@ -2,7 +2,7 @@ import { TelegramsService } from './../../../core/telegrams.service';
 import { Component, OnInit, OnDestroy, Input, ViewChild, HostListener } from '@angular/core';
 import { Subscription, Observable } from 'rxjs';
 import { Telegram } from 'src/app/modules/models/telegram';
-import { MatList } from '@angular/material';
+import { MatList } from '@angular/material/list';
 
 export enum KEY_CODE {
   LEFT_ARROW = 37,

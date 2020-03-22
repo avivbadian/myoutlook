@@ -1,4 +1,4 @@
-import { MatSidenavModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { NgModule } from '@angular/core';
 import { MainComponent } from './main.component';
 import { SharedModule } from '../../../shared/shared.module';

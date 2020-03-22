@@ -1,7 +1,7 @@
 import { MainModule } from './main/main.module';
 import { HeaderModule } from './header/header.module';
 import { AppRoutingModule } from './../../app-routing.module';
-import { MatSidenavModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { SharedModule } from './../../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { LayoutComponent } from './layout.component';
