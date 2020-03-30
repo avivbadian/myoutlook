@@ -75,7 +75,7 @@ interface ExampleFlatNode {
 export class SidebarComponent implements OnInit {
   // tslint:disable-next-line: variable-name
 
-  currFolder : string;
+  currFolder: string;
 
   private _transformer = (node: FolderNode, level: number) => {
     return {
