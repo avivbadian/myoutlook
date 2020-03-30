@@ -4,6 +4,8 @@ import { SidebarComponent } from './sidebar.component';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
+import {MatTreeModule} from '@angular/material/tree';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -12,7 +14,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     SharedModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    MatTreeModule,
+    MatIconModule
   ],
   exports: [
     SidebarComponent

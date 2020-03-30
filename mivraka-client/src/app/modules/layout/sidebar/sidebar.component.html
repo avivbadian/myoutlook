@@ -1,6 +1,25 @@
-<mat-nav-list color="primary">
-    <a mat-list-item (click)="setFolder(1)">דואר נכנס</a>
-    <a mat-list-item (click)="setFolder(2)">דואר יוצא</a>
-    <a mat-list-item (click)="setFolder(3)">טיוטות</a>
-    <a mat-list-item (click)="setFolder(4)">אשפה</a>
-</mat-nav-list>
+<mat-tree trackBy:trackByFn [dataSource]="dataSource" [treeControl]="treeControl" >
+    <!-- This is the tree node template for leaf nodes -->
+    <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding matTreeNodePaddingIndent="20">
+      <!-- use a disabled button to provide padding for tree leaf -->
+      <button mat-icon-button disabled style="visibility: hidden"></button>
+      <a mat-button [ngClass]="{'selected': node.name===currFolder}" (click)="folderSelected(node)">
+            {{node.name}}
+      </a>
+    </mat-tree-node>
+    <!-- This is the tree node template for expandable nodes -->
+    <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodePaddingIndent="20">
+      <p mat-icon-button matTreeNodeToggle
+              [attr.aria-label]="'toggle ' + node.name">
+        <mat-icon class="mat-icon-rtl-mirror">
+          {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+        </mat-icon>
+    </p>
+
+    <a mat-button [ngClass]="{'selected': node.name===currFolder}" (click)="folderSelected(node)">
+            {{node.name}}
+    </a>
+    
+
+    </mat-tree-node>
+  </mat-tree>

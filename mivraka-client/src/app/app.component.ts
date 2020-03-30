@@ -8,7 +8,7 @@ import { jqxGridComponent } from 'jqwidgets-ng/jqxgrid';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  @ViewChild('grid') myGrid: jqxGridComponent;
+  @ViewChild('grid', {static: false}) myGrid: jqxGridComponent;
   isDarkTheme: Observable<boolean>;
 
   constructor(
